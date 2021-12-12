@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password gen</title>
+</head>
+<body>
+    <!-- <h1>Random password Generator!</h1> -->
+    <nav>
+        <ul>
+            <li><ion-icon name="analytics-outline"></ion-icon>Random Password Generator!</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="pw">
+            <div class="pwbtn">
+                <p id="pw">password!</p>
+            <button id="clip-board" onclick="cc()">Copy to Clip-Board<ion-icon name="clipboard-outline"></ion-icon></button>
+            </div>
+            <div class="pwheader">
+                <label for="length">Password Length</label>
+                <input id="len" type="number" min="4" max="20">
+            </div>
+            <div class="pwbody">
+                <div class="form-control">
+                    <label for="upper">Contain Upper Case Alphabets</label>
+                    <input type="checkbox" id="upper">
+                </div>
+                <div class="form-control">
+                    <label for="lower">Contain Lower Case Alphabets</label>
+                    <input type="checkbox" id="lower">
+                </div>
+                <div class="form-control">
+                    <label for="number">Contain Numbers</label>
+                    <input type="checkbox" id="number">
+                </div>
+                <div class="form-control">
+                    <label for="symbol">Contain Symbols</label>
+                    <input type="checkbox" id="symbol">
+                </div>
+                <button id="gen">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
